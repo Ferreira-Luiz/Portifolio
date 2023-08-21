@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 95%;
+  margin: 3rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+  gap: 3rem;
+}
+
+.conhecimentos_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.title_conhecimentos {
+  text-align: center;
+}
+
+
+.title_conhecimentos h3 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.title_conhecimentos p {
+  color: var(--p-txt);
+}
+
+.language_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.icon_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #24292f;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  transition: transform .3s ease;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: var(--dark_shadow)
+}
+
+.icon_group img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.icon_group:hover {
+  box-shadow: var(--light_shadow)
+}

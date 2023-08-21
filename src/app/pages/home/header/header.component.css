@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.logo b {
+  color: var(--orange);
+}
+
+.container nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.container nav ul a {
+  font-size: 1.8rem;
+  position: relative;
+  padding-left: 10px;
+  overflow: hidden;
+  color: var(--p-txt);
+
+}
+
+
+.container nav ul a::before {
+  content: "";
+  position: absolute;
+  background-color: var(--orange);
+  width: 0;
+  height: 3px;
+  bottom: -6px;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+.container nav ul a:hover::before {
+  width: 100%;
+}

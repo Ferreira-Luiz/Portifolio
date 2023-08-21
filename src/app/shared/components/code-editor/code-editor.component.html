@@ -1,0 +1,21 @@
+<div class="editor_container scroll">
+  <div [@slideIn]="showIcons" class="header_editor">
+    <div (click)="tsView()" [ngClass]="{ 'isActive': !showHtmlCode }" class="language_editor scroll">
+      <img src="../../../../assets/icons/typescript-svgrepo-com.svg" alt="TypeScript Icone">
+      <span>lfzinn.component.ts</span>
+    </div>
+
+    <div (click)="htmlView()" [ngClass]="{ 'isActive': showHtmlCode }" class="language_editor scroll">
+      <img src="../../../../assets/icons/htmlicon.svg" alt="HTML Icone">
+      <span>lfzinn.component.html</span>
+    </div>
+
+  </div>
+  <div [@slideIn]="showIcons" id="editor" [ngStyle]="{ 'display': showHtmlCode ? 'none' : 'block' }"
+    [ngClass]="{ 'isActive': showHtmlCode }" [textContent]="dynamicText"></div>
+
+
+  <div id="editor-html" [ngStyle]="{ 'display': showHtmlCode ? 'block' : 'none' }" [textContent]="dynamicTextHTML">
+  </div>
+
+</div>

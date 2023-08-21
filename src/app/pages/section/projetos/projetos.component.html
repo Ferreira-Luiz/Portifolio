@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="projetos_container">
+    <div class="projetos_btn">
+      <button (click)="loadImage('button1')">
+        <img src="../../../../assets/icons/icons8-angularj.svg" alt="">
+        Mountain Page
+      </button>
+      <button (click)="loadImage('button2')">
+        <img src="../../../../assets/icons/icons8-angularj.svg" alt="">
+        Multi Step Form
+      </button>
+      <button (click)="loadImage('button3')">
+        <img src="../../../../assets/icons/icons8-angularj.svg" alt="">
+        God Of War
+      </button>
+    </div>
+    <div class="projetos_images" *ngIf="imageSrc">
+      <img [src]="imageSrc" alt="Imagem Carregada">
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+  margin: 0 auto;
+  max-width: 95%;
+  gap: 1rem;
+  background-color: #24292f;
+  padding: 4rem;
+  border-radius: 1rem;
+  transition: transform .3s ease;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: var(--dark_shadow)
+}
+
+.card:hover {
+  box-shadow: var(--light_shadow)
+}
+
+.titulo {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: var(--p-txt);
+}
+
+.desempenho {
+  color: var(--orange);
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.description {
+  font-weight: 700;
+}

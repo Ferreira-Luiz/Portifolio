@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.2.0",
+    "@angular/animations": "^15.2.9",
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",
     "@angular/core": "^15.2.0",
@@ -18,8 +18,12 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "ace-builds": "^1.24.1",
+    "countup.js": "^2.7.1",
     "rxjs": "~7.8.0",
+    "scrollreveal": "^4.0.9",
     "tslib": "^2.3.0",
+    "typed.js": "^2.0.16",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
@@ -27,6 +31,7 @@
     "@angular/cli": "~15.2.2",
     "@angular/compiler-cli": "^15.2.0",
     "@types/jasmine": "~4.3.0",
+    "@types/scrollreveal": "^0.0.8",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
