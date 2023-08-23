@@ -65,6 +65,7 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
       this.editor.renderer.setShowPrintMargin(false);
       this.editor.setOption("highlightActiveLine", false);
 
+
       const simulateTyping = () => {
         let currentIndex = 0;
         const textToType = this.dynamicText;

@@ -15,3 +15,15 @@
   max-width: 140rem;
   margin: 0 auto;
 }
+
+.mobile_header {
+  display: none;
+}
+
+
+@media (max-width : 500px) {
+
+  .mobile_header {
+    display: block;
+  }
+}

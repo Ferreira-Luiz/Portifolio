@@ -87,3 +87,83 @@
 .main_btn a:nth-child(1):hover img {
   transform: rotate(0);
 }
+
+@media (max-width: 544px) {
+  .main_txt {
+    gap: 1rem;
+  }
+
+  .main_txt h1 {
+    max-width: 100%;
+    font-size: 6rem;
+  }
+
+  .main_txt p {
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 30rem;
+
+  }
+
+  .main_btn {
+    gap: 1rem;
+  }
+
+  .main_btn a {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+}
+
+
+@media (max-width : 360px) {
+  .main_txt {
+    text-align: center;
+  }
+
+  .main_txt h1 {
+    font-size: 4rem;
+  }
+
+  .main_txt p {
+    font-size: 1.2rem;
+    max-width: 100%;
+
+  }
+
+  .main_btn a {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+
+}
+
+@media (max-width : 245px) {
+  .main_txt h1 {
+    font-size: 2.2rem;
+  }
+
+  .main_txt p {
+    font-size: 1.1rem;
+
+  }
+
+  .main_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_btn a {
+    gap: 0.5rem;
+  }
+
+  .main_btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+
+}

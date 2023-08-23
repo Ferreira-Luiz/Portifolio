@@ -17,6 +17,9 @@
 }
 
 .title_conhecimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   text-align: center;
 }
 
@@ -24,6 +27,7 @@
 .title_conhecimentos h3 {
   font-size: 3rem;
   letter-spacing: 2px;
+
 }
 
 .title_conhecimentos p {
@@ -58,4 +62,38 @@
 
 .icon_group:hover {
   box-shadow: var(--light_shadow)
+}
+
+
+@media (max-width: 544px) {
+  .title_conhecimentos {
+    text-align: center;
+  }
+
+  .title_conhecimentos h3 {
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+  }
+
+  .title_conhecimentos p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .title_conhecimentos h3 {
+    font-size: 1.6rem;
+    letter-spacing: normal;
+  }
+
+  .title_conhecimentos p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .icon_group {
+    gap: 1rem;
+    padding: 2rem 3rem;
+  }
 }

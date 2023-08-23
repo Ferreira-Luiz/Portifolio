@@ -14,7 +14,7 @@ export class CountService {
   createCountUp(target : string, endVal: number, options?: CountUpOptions): CountUp {
     const defaultOptions : CountUpOptions = {
       startVal: 0,
-      duration: 6,
+      duration: 4,
       useEasing: true,
     };
 

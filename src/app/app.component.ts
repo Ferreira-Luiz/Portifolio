@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { slideInAnimation } from './shared/animations/modules/angularAnimations.module';
 
 import { ScrollReavealService } from './shared/animations/services/scroll-reaveal.service';
-
+import { ScrollSectionService } from './shared/animations/services/scroll-section.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   imageUrl = '/assets/icons/happy.png';
   showIcons = false;
 
-  constructor(private scrollReavealService: ScrollReavealService) {}
+  constructor(private scrollReavealService: ScrollReavealService, private scrollSectionService : ScrollSectionService) {}
 
 
 

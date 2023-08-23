@@ -13,15 +13,15 @@ export class ScrollReavealService {
 
   init() {
     ScrollReveal({
-      origin: 'bottom',
+      origin: 'top',
       distance: '20px',
-      duration: 1000,
+      duration: 800,
       delay: 200,
       reset: true,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
-      mobile: true,
+      viewFactor: 0.3,
+      mobile: false,
     });
 
     ScrollReveal().reveal('.scroll');

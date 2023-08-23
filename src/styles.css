@@ -8,13 +8,15 @@
 
 
 /*
-   breakpoint-xsmall: 320px;
+
+  breakpoint-xsmall: 320px;
   breakpoint-small: 544px;
   breakpoint-medium: 768px;
   breakpoint-large: 1012px;
   breakpoint: 1280px;
   breakpoint-xxlarge: 1440px;
-  */
+
+*/
 
 
 * {
@@ -44,9 +46,12 @@
 
 
   /* CORES */
+
   --orange: #FFA500;
   --background: #1b1f24;
   --p-txt: #9ca3af;
+
+
   /* Shadows */
   --dark_shadow: 0 0 0 1px #000,
     0 30px 30px rgba(0, 0, 0, .07),
@@ -63,12 +68,17 @@
     0 0 0 1px #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   font-family: 'Mona Sans';
   font-size: 1.6rem;
   background: linear-gradient(to bottom, #2a2342, #1d1f29);
   color: #ffff;
+  overflow-x: hidden;
 
 
 }

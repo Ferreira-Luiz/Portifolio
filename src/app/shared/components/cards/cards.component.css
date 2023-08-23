@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   height: 20rem;
-  margin: 0 auto;
-  max-width: 95%;
+  margin: 0 1rem;
+  max-width: 100%;
   gap: 1rem;
   background-color: #24292f;
   padding: 4rem;
@@ -34,4 +34,25 @@
 
 .description {
   font-weight: 700;
+}
+
+@media (max-width : 400px) {
+  .card {
+    height: 15rem;
+    padding: 2rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .desempenho {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
 }

@@ -1,47 +1,68 @@
 .container {
   display: flex;
+  padding: 2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
+  max-width: 100%;
 }
 
 .logo {
-  font-size: 3rem;
-  color: #ffff;
   cursor: pointer;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--p-txt);
 }
 
 .logo b {
   color: var(--orange);
 }
 
-.container nav ul {
+.menu ul {
   display: flex;
-  gap: 2.5rem;
+  gap: 4rem;
 }
 
-.container nav ul a {
-  font-size: 1.8rem;
-  position: relative;
-  padding-left: 10px;
-  overflow: hidden;
+.menu ul a {
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--p-txt);
+  cursor: pointer;
+}
 
+.menu ul a:hover {
+  color: #fff;
 }
 
 
-.container nav ul a::before {
-  content: "";
-  position: absolute;
-  background-color: var(--orange);
-  width: 0;
-  height: 3px;
-  bottom: -6px;
-  transform: translateY(-50%);
-  z-index: -1;
-  transition: width 0.5s;
+@media (max-width: 768px) {
+  .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu ul a {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 
-.container nav ul a:hover::before {
-  width: 100%;
+@media (max-width: 500px) {
+  .container {
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: var(--orange);
+  }
+
+  .logo b {
+    color: var(--p-txt);
+  }
+
+  .menu {
+    display: none;
+
+  }
 }

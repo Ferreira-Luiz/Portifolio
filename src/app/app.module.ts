@@ -11,9 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResultadosComponent } from './pages/section/resultados/resultados.component';
 import { CardsComponent } from './shared/components/cards/cards.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { ProjetosComponent } from './pages/section/projetos/projetos.component';
 import { ScrollRevealModule } from './shared/animations/modules/scroll-reveal.module';
 import { CountModule } from './shared/animations/modules/count.module';
+import { MobileMenuComponent } from './shared/components/mobile-menu/mobile-menu.component';
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { CountModule } from './shared/animations/modules/count.module';
     ResultadosComponent,
     CardsComponent,
     FooterComponent,
-    ProjetosComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,

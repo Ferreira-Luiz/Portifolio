@@ -2,10 +2,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-  width: 95%;
-  margin: 3rem 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 3rem 1rem;
   border-radius: 2rem;
   gap: 3rem;
 }
@@ -45,6 +42,10 @@
   font-size: 3.5rem;
 }
 
+.about_txt h2 b {
+  color: var(--orange);
+}
+
 
 .developer_p {
   color: var(--p-txt);
@@ -60,4 +61,71 @@
 
 .about_icons img {
   width: 4rem;
+}
+
+@media (max-width: 1012px) {
+  .container {
+    flex-wrap: wrap;
+    margin: 3rem 1rem;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .about_image {
+    max-width: 100%;
+  }
+
+  .about_content {
+    text-align: start;
+    order: -1;
+    max-width: 100%;
+  }
+
+  .about_icons {
+    margin: 2rem 0;
+  }
+
+  .about_image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 544px) {
+  .about_txt {
+    text-align: center;
+  }
+
+  .about_txt p {
+    font-size: 1.8rem;
+  }
+
+  .about_txt .developer_p {
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 280px) {
+  .about_txt h2 {
+    font-size: 2.5rem;
+  }
+
+  .about_txt .developer_p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+
+  .about_txt p {
+    font-size: 1.5rem;
+  }
+
+  .about_txt span {
+    font-size: 1.3rem;
+  }
+
+  .about_icons img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 }

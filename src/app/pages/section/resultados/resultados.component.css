@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ultra&display=swap');
 
 .container {
   display: flex;
@@ -60,9 +60,9 @@
 }
 
 .resultados_group span {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Ultra', serif;
   color: var(--orange);
-  font-size: 4rem;
+  font-size: 3.5rem;
   position: relative;
   padding-left: 10px;
   overflow: hidden;
@@ -88,4 +88,30 @@
 
 .resultados_group span:hover::before {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .resultados_titles h4 {
+    font-size: 2.5rem;
+  }
+
+  .resultados_titles span {
+    font-size: 1.4rem;
+  }
+
+  .resultados_group span {
+    font-size: 2.5rem;
+  }
+
+  .resultados_group p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .resultados_group span::before {
+    height: 2px;
+  }
+
+
 }

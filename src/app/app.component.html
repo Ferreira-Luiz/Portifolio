@@ -1,5 +1,5 @@
-<header>
-  <app-header class="scroll" />
+<header class="header">
+  <app-header />
 </header>
 
 
@@ -7,17 +7,19 @@
 
 <div class="container">
 
-  <main>
+  <main id="home">
     <app-main />
     <app-code-editor />
   </main>
 
   <section>
-    <app-sobremim />
+    <app-sobremim id="sobre" />
   </section>
 
+
+
   <section>
-    <app-conhecimentos />
+    <app-conhecimentos id="conhecimentos" />
   </section>
 
   <section>
@@ -34,14 +36,11 @@
     </article>
   </section>
 
-
-  <section>
-    <app-projetos />
-  </section>
-
-
-
   <footer>
     <app-footer />
   </footer>
+
+
+  <app-mobile-menu class="mobile_header" />
+
 </div>
