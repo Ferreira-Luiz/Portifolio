@@ -29,3 +29,15 @@ export const slideInAnimation = trigger('slideIn', [
     ])
   ])
 ]);
+
+
+
+export const slideFromTop = trigger('slideFromTop', [
+  transition(':enter', [
+    style({ transform: 'translateY(-100%)', opacity: 0 }),
+    animate('200ms ease-in', style({ transform: 'translateY(0)', opacity: 1 })),
+  ]),
+  transition(':leave', [
+    animate('200ms ease-out', style({ transform: 'translateY(-100%)', opacity: 0 })),
+  ]),
+]);

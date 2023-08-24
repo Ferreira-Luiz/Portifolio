@@ -12,6 +12,7 @@ import { ResultadosComponent } from './pages/section/resultados/resultados.compo
 import { CardsComponent } from './shared/components/cards/cards.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { MobileMenuComponent } from './shared/components/mobile-menu/mobile-menu.component';
+import { DuvidasComponent } from './pages/section/duvidas/duvidas.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MobileMenuComponent } from './shared/components/mobile-menu/mobile-menu
     CardsComponent,
     FooterComponent,
     MobileMenuComponent,
+    DuvidasComponent,
   ],
   imports: [
     BrowserModule,

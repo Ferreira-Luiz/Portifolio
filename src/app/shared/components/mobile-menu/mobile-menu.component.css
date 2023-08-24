@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  padding: 1rem 0;
-  border-top: 1px solid var(--orange);
+
+  padding: 2rem 0;
+  box-shadow: var(--light_shadow);
 }
 
 
@@ -37,4 +38,12 @@
 .menu_group img {
   width: 3.8rem;
   height: 3.5rem;
+}
+
+
+@media (max-width: 250px) {
+  .container nav {
+    flex-direction: column;
+
+  }
 }
