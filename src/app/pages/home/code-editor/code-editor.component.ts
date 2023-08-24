@@ -1,12 +1,12 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
-
-import { ScrollReavealService } from '../../../shared/animations/services/scroll-reaveal.service';
-import { slideInAnimation } from '../../../shared/animations/modules/angularAnimations.module';
-
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as ace from 'ace-builds';
-import 'ace-builds/src-noconflict/mode-typescript';
-import 'ace-builds/src-noconflict/theme-dracula';
-import 'ace-builds/src-noconflict/mode-html';
+
+import { slideInAnimation } from '../../../shared/animations/modules/angularAnimations.module';
+import { ScrollReavealService } from '../../../shared/animations/services/scroll-reaveal.service';
+import { EditorService } from './editor.service';
+
+
+
 
 @Component({
   selector: 'app-code-editor',
@@ -15,29 +15,56 @@ import 'ace-builds/src-noconflict/mode-html';
    animations: [slideInAnimation],
 })
 export class CodeEditorComponent implements AfterViewInit, OnInit {
-  showHtmlCode: boolean = false;
-  linkUrl:string  = 'https://www.linkedin.com/in/lfsilvaferreira/'
   showIcons = false;
 
-  constructor(private scrollReavealService: ScrollReavealService){ }
-
-
-
-
+  constructor(private scrollReavealService: ScrollReavealService, private editorService : EditorService){}
 
   ngOnInit(): void {
-      this.showIcons = !this.showIcons;
-      this.scrollReavealService.init();
-  }
+    this.showIcons = !this.showIcons;
+    this.scrollReavealService.init();
 
-  editorHtml?: ace.Ace.Editor;
-  editor?: ace.Ace.Editor;
+}
 
 
-  tsView() {
-    this.showHtmlCode = false;
-    this.editor?.resize();
-  }
+    editorHtml?: ace.Ace.Editor;
+    editorCss?: ace.Ace.Editor;
+    editorTs?: ace.Ace.Editor;
+    isTsOpen: boolean = true;
+    isHtmlOpen: boolean = false;
+    isCssOpen: boolean = false;
+
+
+    ngAfterViewInit(): void {
+      this.editorTs = this.editorService.createEditor('editorTs', 'typescript');
+      this.editorTs.setTheme('ace/theme/dracula');
+    }
+
+
+
+
+    //   const simulateTyping = () => {
+    //     let currentIndex = 0;
+    //     const textToType = this.dynamicText;
+    //     const interval = setInterval(() => {
+    //       if (currentIndex < textToType.length) {
+    //         this.editor?.insert(textToType.charAt(currentIndex));
+    //         currentIndex++;
+    //       } else {
+    //         clearInterval(interval);
+    //       }
+    //     }, this.typingSpeed);
+    //   };
+
+    //   this.editor.setValue('');
+
+    //   simulateTyping();
+
+    // }
+
+
+
+
+
 
 
 
@@ -46,60 +73,43 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
 
   dynamicTextHTML: string =`<!--Me mande uma Mensagem-->
   <nav>
-    <a href="https://www.linkedin.com/in/lfsilvaferreira/" target="_blank"> LinkedIn </a>
-    <a href="https://github.com/LFzinn" target="_blank"> GitHub </a>
+    <a href="https://www.linkedin.com/in/lfsilvaferreira/"> LinkedIn </a>
+    <a href="https://github.com/LFzinn"> GitHub </a>
   </nav>`;
+
 
 
   typingSpeed: number = 30;
 
-  ngAfterViewInit(): void {
-    this.editor = ace.edit('editor');
-    if (this.editor) {
-      this.editor.setTheme('ace/theme/dracula');
-      this.editor.getSession().setMode('ace/mode/typescript');
-      this.editor.setOptions({
-        fontSize: '20px',
-        fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;',
-      });
-      this.editor.renderer.setShowPrintMargin(false);
-      this.editor.setOption("highlightActiveLine", false);
 
 
-      const simulateTyping = () => {
-        let currentIndex = 0;
-        const textToType = this.dynamicText;
-        const interval = setInterval(() => {
-          if (currentIndex < textToType.length) {
-            this.editor?.insert(textToType.charAt(currentIndex));
-            currentIndex++;
-          } else {
-            clearInterval(interval);
-          }
-        }, this.typingSpeed);
-      };
 
-      this.editor.setValue('');
-
-      simulateTyping();
-
-    }
+  tsView() {
+    this.isHtmlOpen = false;
+    this.isCssOpen = false;
+    this.isTsOpen = true;
   }
 
-    htmlView() :void {
-      this.showHtmlCode = true;
-      this.editorHtml?.resize();
-      this.editorHtml = ace.edit('editor-html');
-      this.editorHtml.setTheme('ace/theme/dracula');
-      this.editorHtml.getSession().setMode('ace/mode/html');
-      this.editorHtml.setOptions({
-        fontSize: '20px',
-        fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;',
-      });
-      this.editorHtml.renderer.setShowPrintMargin(false);
-      this.editorHtml.setOption("highlightActiveLine", false);
 
-    }
+
+
+
+  htmlView() :void {
+      this.isTsOpen = false;
+      this.isCssOpen = false;
+      this.isHtmlOpen = true;
+      this.editorHtml = this.editorService.createEditor('editorHtml', 'java');
+      this.editorHtml.setTheme('ace/theme/vibrant_ink');
+  }
+
+
+  cssView() :void {
+    this.isTsOpen = false;
+    this.isHtmlOpen = false;
+    this.isCssOpen = true;
+    this.editorCss = this.editorService.createEditor('editorCss', 'java')
+    this.editorCss.setTheme('ace/theme/dracula');
+  }
 
 }
 

@@ -55,7 +55,7 @@
 }
 
 
-#editor, #editor-html {
+#editorTs, #editorHtml, #editorCss {
   height: 40rem;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
