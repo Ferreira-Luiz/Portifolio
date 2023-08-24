@@ -18,8 +18,8 @@
     </div>
 
     <div (click)="cssView()" [ngClass]="{ 'isActive': isCssOpen }" class="language_editor scroll">
-      <img src="../../../../assets/icons/htmlicon.svg" alt="HTML Icone">
-      <span>lfzinn.component.Css</span>
+      <img src="../../../../assets/icons/icons8-css.svg" alt="HTML Icone">
+      <span>lfzinn.component.css</span>
     </div>
 
 
@@ -41,14 +41,14 @@
 
 
   <div [@slideIn]="showIcons" id="editorTs" [ngStyle]="{ 'display': isTsOpen ? 'block' : 'none' }"
-    [textContent]="dynamicText">
+    [textContent]="dynamicTextTs">
   </div>
 
 
   <div id="editorHtml" [ngStyle]="{ 'display': isHtmlOpen ? 'block' : 'none' }" [textContent]="dynamicTextHTML">
   </div>
 
-  <div id="editorCss" [ngStyle]="{ 'display': isCssOpen ? 'block' : 'none' }" [textContent]="dynamicTextHTML">
+  <div id="editorCss" [ngStyle]="{ 'display': isCssOpen ? 'block' : 'none' }" [textContent]="dynamicTextCss">
   </div>
 
 </div>

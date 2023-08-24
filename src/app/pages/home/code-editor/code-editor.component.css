@@ -4,7 +4,10 @@
   margin: 3rem auto;
 }
 
+
+
 .header_editor {
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 2rem;

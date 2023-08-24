@@ -34,52 +34,24 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
     isCssOpen: boolean = false;
 
 
+
+
     ngAfterViewInit(): void {
       this.editorTs = this.editorService.createEditor('editorTs', 'typescript');
-      this.editorTs.setTheme('ace/theme/dracula');
+      this.editorService.simulateTyping('editorTs', `${this.dynamicTextTs}` );
+
     }
 
 
+  dynamicTextTs: string = `import * as cssSkills from 'CSS'\nimport * as htmlSkills from 'HTML'\nimport * as tsSkills from 'TypeScript'\nimport * as jsSkills from 'JavaScript'\nimport * as softSkills from 'lifeExperiences'`;
+
+  dynamicTextHTML: string = `<!--Me mande uma Mensagem-->
+  <nav>\n<a href="https://www.linkedin.com/in/lfsilvaferreira/"> LinkedIn </a>\n</nav>`;
 
 
-    //   const simulateTyping = () => {
-    //     let currentIndex = 0;
-    //     const textToType = this.dynamicText;
-    //     const interval = setInterval(() => {
-    //       if (currentIndex < textToType.length) {
-    //         this.editor?.insert(textToType.charAt(currentIndex));
-    //         currentIndex++;
-    //       } else {
-    //         clearInterval(interval);
-    //       }
-    //     }, this.typingSpeed);
-    //   };
+  dynamicTextCss = `
+  .luizFernando {\nidade : 23anos;\nexperiencia: 1.5anos;\ncargo : frontEndDeveloper;\n}`
 
-    //   this.editor.setValue('');
-
-    //   simulateTyping();
-
-    // }
-
-
-
-
-
-
-
-
-
-  dynamicText: string = `import * as cssSkills from 'CSS'\nimport * as htmlSkills from 'HTML'\nimport * as tsSkills from 'TypeScript'\nimport * as jsSkills from 'JavaScript'\nimport * as softSkills from 'lifeExperiences'`;
-
-  dynamicTextHTML: string =`<!--Me mande uma Mensagem-->
-  <nav>
-    <a href="https://www.linkedin.com/in/lfsilvaferreira/"> LinkedIn </a>
-    <a href="https://github.com/LFzinn"> GitHub </a>
-  </nav>`;
-
-
-
-  typingSpeed: number = 30;
 
 
 
@@ -88,6 +60,8 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
     this.isHtmlOpen = false;
     this.isCssOpen = false;
     this.isTsOpen = true;
+    this.editorHtml = this.editorService.createEditor('editorTs', 'typescript');
+    this.editorService.simulateTyping('editorTs', `${this.dynamicTextTs}` );
   }
 
 
@@ -98,8 +72,8 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
       this.isTsOpen = false;
       this.isCssOpen = false;
       this.isHtmlOpen = true;
-      this.editorHtml = this.editorService.createEditor('editorHtml', 'java');
-      this.editorHtml.setTheme('ace/theme/vibrant_ink');
+      this.editorHtml = this.editorService.createEditor('editorHtml', 'typescript');
+      this.editorService.simulateTyping('editorHtml', `${this.dynamicTextHTML}` );
   }
 
 
@@ -107,8 +81,8 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
     this.isTsOpen = false;
     this.isHtmlOpen = false;
     this.isCssOpen = true;
-    this.editorCss = this.editorService.createEditor('editorCss', 'java')
-    this.editorCss.setTheme('ace/theme/dracula');
+    this.editorCss = this.editorService.createEditor('editorCss', 'typescript')
+    this.editorService.simulateTyping('editorCss', `${this.dynamicTextCss}` );
   }
 
 }
