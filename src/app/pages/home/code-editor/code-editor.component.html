@@ -40,15 +40,17 @@
 
 
 
-  <div [@slideIn]="showIcons" id="editorTs" [ngStyle]="{ 'display': isTsOpen ? 'block' : 'none' }"
+  <div role="textbox" [@slideIn]="showIcons" id="editorTs" [ngStyle]="{ 'display': isTsOpen ? 'block' : 'none' }"
     [textContent]="dynamicTextTs">
   </div>
 
 
-  <div id="editorHtml" [ngStyle]="{ 'display': isHtmlOpen ? 'block' : 'none' }" [textContent]="dynamicTextHTML">
+  <div role="textbox" id="editorHtml" [ngStyle]="{ 'display': isHtmlOpen ? 'block' : 'none' }"
+    [textContent]="dynamicTextHTML">
   </div>
 
-  <div id="editorCss" [ngStyle]="{ 'display': isCssOpen ? 'block' : 'none' }" [textContent]="dynamicTextCss">
+  <div role="textbox" id="editorCss" [ngStyle]="{ 'display': isCssOpen ? 'block' : 'none' }"
+    [textContent]="dynamicTextCss">
   </div>
 
 </div>

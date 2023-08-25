@@ -26,6 +26,8 @@
 }
 
 .title_group img {
+  width: 6.5rem;
+  height: 6.5rem;
   animation: bounce 2s infinite alternate;
 }
 

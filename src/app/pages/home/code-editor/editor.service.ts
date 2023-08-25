@@ -13,9 +13,9 @@ export class EditorService {
 
 constructor() { }
 
-  createEditor(elementId : string, mode : string ) : ace.Ace.Editor {
+  createEditor(elementId : string ) : ace.Ace.Editor {
     const editor = ace.edit(elementId);
-    editor.getSession().setMode(`ace/mode/${mode}`);
+    editor.getSession().setMode(`ace/mode/typescript`);
     editor.setTheme('ace/theme/dracula');
     editor.setOptions({
       fontSize: '20px',

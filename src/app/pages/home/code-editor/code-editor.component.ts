@@ -37,7 +37,7 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
 
 
     ngAfterViewInit(): void {
-      this.editorTs = this.editorService.createEditor('editorTs', 'typescript');
+      this.editorTs = this.editorService.createEditor('editorTs');
       this.editorService.simulateTyping('editorTs', `${this.dynamicTextTs}` );
 
     }
@@ -49,8 +49,7 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
   <nav>\n<a href="https://www.linkedin.com/in/lfsilvaferreira/"> LinkedIn </a>\n</nav>`;
 
 
-  dynamicTextCss = `
-  .luizFernando {\nidade : 23anos;\nexperiencia: 1.5anos;\ncargo : frontEndDeveloper;\n}`
+  dynamicTextCss = `.luizFernando {\nidade : 23anos;\nexperiencia: 1.5anos;\ncargo : frontEndDeveloper;\n}`
 
 
 
@@ -60,7 +59,7 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
     this.isHtmlOpen = false;
     this.isCssOpen = false;
     this.isTsOpen = true;
-    this.editorHtml = this.editorService.createEditor('editorTs', 'typescript');
+    this.editorHtml = this.editorService.createEditor('editorTs');
     this.editorService.simulateTyping('editorTs', `${this.dynamicTextTs}` );
   }
 
@@ -72,7 +71,7 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
       this.isTsOpen = false;
       this.isCssOpen = false;
       this.isHtmlOpen = true;
-      this.editorHtml = this.editorService.createEditor('editorHtml', 'typescript');
+      this.editorHtml = this.editorService.createEditor('editorHtml');
       this.editorService.simulateTyping('editorHtml', `${this.dynamicTextHTML}` );
   }
 
@@ -81,7 +80,7 @@ export class CodeEditorComponent implements AfterViewInit, OnInit {
     this.isTsOpen = false;
     this.isHtmlOpen = false;
     this.isCssOpen = true;
-    this.editorCss = this.editorService.createEditor('editorCss', 'typescript')
+    this.editorCss = this.editorService.createEditor('editorCss');
     this.editorService.simulateTyping('editorCss', `${this.dynamicTextCss}` );
   }
 
