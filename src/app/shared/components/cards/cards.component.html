@@ -1,7 +1,10 @@
-<div class="card">
-  <span class="titulo">{{titulo}}</span>
-  <span class="desempenho">{{ desempenho }}</span>
-  <div class="card_content">
-    <span class="description">{{ conteudo }}</span>
+<div class="card_container">
+  <div class="card" *ngFor="let card of cards">
+    <span class="site">speed test</span>
+    <span class="titulo">{{ card.site }}</span>
+    <span class="desempenho">{{ card.desempenho }}</span>
+    <div class="card_content">
+      <a class="description" [href]="card.link" target="_blank">Análise completa</a>
+    </div>
   </div>
 </div>

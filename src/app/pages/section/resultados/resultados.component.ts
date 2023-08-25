@@ -65,4 +65,6 @@ export class ResultadosComponent implements  OnInit, AfterViewInit {
 
 
 
+
+
 }

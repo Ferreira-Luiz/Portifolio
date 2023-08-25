@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -6,7 +6,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent {
-  @Input() conteudo?: string;
-  @Input() titulo?: string;
-  @Input() desempenho?: string;
+
+  cards = [
+    {site : 'PageSpeed Insights', desempenho : 'Excelente', link : 'https://pagespeed.web.dev/analysis/https-portifolio-lfzinn-vercel-app/4lltaccmah?form_factor=desktop'},
+    {site : 'GTmetrix', desempenho : 'Ótimo', link : 'https://gtmetrix.com/reports/portifolio-lfzinn.vercel.app/XqECtDNr/'},
+  ];
+
+
+
+
+
 }
+

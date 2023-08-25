@@ -1,12 +1,23 @@
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
 .card {
+  position: relative;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 20rem;
   margin: 0 1rem;
   max-width: 100%;
-  gap: 1rem;
+  width: 30rem;
+  gap: 2rem;
   background-color: #24292f;
   padding: 4rem;
   border-radius: 1rem;
@@ -15,14 +26,26 @@
   box-shadow: var(--dark_shadow)
 }
 
+.site {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  opacity: 0.1;
+  color: var(--p-txt);
+
+}
+
 .card:hover {
   box-shadow: var(--light_shadow)
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   letter-spacing: 3px;
-  color: var(--p-txt);
 }
 
 .desempenho {
@@ -34,25 +57,18 @@
 
 .description {
   font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
 }
 
-@media (max-width : 400px) {
+.description:hover {
+  color: var(--p-txt);
+}
+
+@media (max-width : 340px) {
   .card {
-    height: 15rem;
-    padding: 2rem;
+    height: 20rem;
+    margin: 0;
+    width: 20rem;
   }
-
-  .titulo {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-
-  .desempenho {
-    font-size: 1.7rem;
-  }
-
-  .description {
-    font-size: 1.1rem;
-  }
-
 }

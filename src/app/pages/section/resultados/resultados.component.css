@@ -23,18 +23,18 @@
   gap: 3rem;
 }
 
-.resultados_titles {
-  max-width: 100%;
-}
-
 .resultados_titles h4 {
-  font-size: 3rem;
+  font-size: 8rem;
   font-weight: 700;
 }
 
 .resultados_titles span {
+  display: block;
+  margin: 0 auto;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--p-txt);
+  width: 60rem;
 }
 
 .resultados_itens {
@@ -53,6 +53,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   max-width: 20rem;
   gap: 3rem;
   text-align: center;
@@ -93,15 +94,16 @@
 @media (max-width: 768px) {
 
   .resultados_titles h4 {
-    font-size: 2.5rem;
+    font-size: 5rem;
+    max-width: 100%;
   }
 
   .resultados_titles span {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .resultados_group span {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .resultados_group p {
@@ -114,4 +116,35 @@
   }
 
 
+}
+
+@media (max-width: 600px) {
+  .resultados_group {
+    max-width: 20rem;
+    gap: 1rem;
+  }
+
+  .resultados_titles h4 {
+    font-size: 3rem;
+  }
+
+  .resultados_titles span {
+    max-width: 40rem;
+  }
+
+  .resultados_group span {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .resultados_titles h4 {
+    font-size: 2rem;
+  }
+
+  .resultados_titles span {
+    font-size: 1.3rem;
+    max-width: 20rem;
+  }
 }

@@ -25,14 +25,7 @@
   <section>
     <article>
       <app-resultados />
-      <div class="cards">
-        <app-cards class="scroll" [@slideIn]="showIcons" [titulo]="'SEO'" [desempenho]="'Excelente'"
-          [conteudo]="'Avaliação do SEO da pagina.'" />
-        <app-cards class="scroll" [@slideIn]="showIcons" [titulo]="'VELOCIDADE'" [desempenho]="'Ótimo'"
-          [conteudo]="'Avaliação da velocidade do servidor.'" />
-        <app-cards class="scroll" [@slideIn]="showIcons" [titulo]="'OTIMIZAÇÃO'" [desempenho]="'Excelente'"
-          [conteudo]="'Avaliação da otimização do site.'" />
-      </div>
+      <app-cards class="scroll" [@slideIn]="showIcons" />
     </article>
   </section>
 
@@ -41,7 +34,9 @@
 
 
 </div>
+
 <footer>
   <app-footer />
 </footer>
+
 <app-mobile-menu class="mobile_header" />
