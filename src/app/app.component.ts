@@ -12,7 +12,7 @@ import { ScrollSectionService } from './shared/animations/services/scroll-sectio
 })
 
 export class AppComponent implements OnInit {
-  title = 'port';
+  title = 'Port';
   imageUrl = '/assets/icons/happy.png';
   showIcons = false;
 
