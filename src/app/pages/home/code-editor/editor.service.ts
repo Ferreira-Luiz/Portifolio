@@ -29,7 +29,7 @@ constructor() { }
     return editor;
   }
 
-  typingSpeed: number = 20;
+  typingSpeed: number = 10;
 
 
   simulateTyping(element: string, text: string ) {
@@ -44,6 +44,7 @@ constructor() { }
         clearInterval(interval);
       }
     }, this.typingSpeed);
+    editorType.setReadOnly(true);
     editorType?.setValue('');
   }
 
