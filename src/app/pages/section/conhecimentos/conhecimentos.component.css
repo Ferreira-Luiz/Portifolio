@@ -19,14 +19,18 @@
 .title_conhecimentos {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .title_conhecimentos h3 {
-  font-size: 3rem;
-  letter-spacing: 2px;
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.2;
+  letter-spacing: 3px;
 
 }
 
@@ -64,30 +68,40 @@
   box-shadow: var(--light_shadow)
 }
 
-
-@media (max-width: 544px) {
-  .title_conhecimentos {
-    text-align: center;
-  }
-
+@media (max-width: 860px) {
   .title_conhecimentos h3 {
-    font-size: 2.3rem;
+    font-size: 6rem;
     letter-spacing: 1px;
   }
 
   .title_conhecimentos p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    max-width: 60%;
   }
 }
 
-@media (max-width: 300px) {
+
+@media (max-width: 544px) {
+
   .title_conhecimentos h3 {
-    font-size: 1.6rem;
+    font-size: 4rem;
+  }
+
+  .title_conhecimentos p {
+    font-size: 1.3rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .title_conhecimentos h3 {
+    font-size: 2.2rem;
     letter-spacing: normal;
   }
 
   .title_conhecimentos p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    max-width: 60%;
   }
 }
 
