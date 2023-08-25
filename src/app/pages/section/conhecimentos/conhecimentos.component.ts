@@ -25,9 +25,9 @@ export class ConhecimentosComponent implements OnInit  {
   experiencias = [
     { imagem : '../../../../assets/icons/angular.svg', title : 'Angular', alt : 'Icone do Angular'},
     { imagem : '../../../../assets/icons/tsIcon.svg', title : 'TypeScript', alt : 'Icone do TypeScript'},
+    { imagem : '../../../../assets/icons/icons8-js.svg', title : 'JavaScript', alt : 'Icone do JavaScript'},
     { imagem : '../../../../assets/icons/icons8-css.svg', title : 'CSS', alt : 'Icone do CSS'},
     { imagem : '../../../../assets/icons/icons8-html.svg', title : 'HTML', alt : 'Icone do HTML'},
-    { imagem : '../../../../assets/icons/icons8-js.svg', title : 'Css', alt : 'Icone do CSS'},
   ]
 
 
