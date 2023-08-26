@@ -68,6 +68,21 @@
   .card {
     height: 20rem;
     margin: 0;
-    width: 20rem;
+    width: 15rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+
+  .desempenho {
+    color: var(--orange);
+    font-size: 2rem;
+  }
+
+  .description {
+    font-weight: 700;
+    font-size: 1.4rem;
   }
 }
