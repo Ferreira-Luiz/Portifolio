@@ -20,7 +20,7 @@ export class EditorService {
 
   private setEditorOptions(editor: ace.Ace.Editor) {
     editor.setOptions({
-      fontSize: '20px',
+      fontSize: '5rem',
       fontFamily: 'ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace',
     });
     editor.renderer.setShowPrintMargin(false);
