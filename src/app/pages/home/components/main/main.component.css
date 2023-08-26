@@ -8,13 +8,15 @@
   gap: 3rem;
 }
 
+
+
 .main_txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 3rem;
+  gap: 2rem;
 
 }
 
@@ -26,8 +28,8 @@
 }
 
 .title_group img {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 14rem;
+  height: 15rem;
   animation: bounce 2s infinite alternate;
 }
 
@@ -38,7 +40,7 @@
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 }
 
@@ -47,10 +49,11 @@
 
 
 .main_txt h1 {
-  font-size: 6rem;
+  font-size: 12rem;
   color: #fff;
   letter-spacing: 3px;
   font-family: 'nexa';
+  line-height: 9.6rem;
 
 }
 
@@ -60,7 +63,8 @@
 
 .main_txt p {
   color: var(--p-txt);
-  font-size: 1.8rem;
+  font-size: 4rem;
+  font-weight: 700;
 
 }
 
@@ -119,13 +123,14 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
   .main_txt h1 {
-    font-size: 8rem;
+    font-size: 9rem;
+    line-height: 7.2rem;
   }
 
   .main_txt p {
-    max-width: 40rem;
+    font-size: 2.5rem;
   }
 
   .title_group img {
@@ -133,26 +138,13 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 690px) {
+
   .main_txt h1 {
     font-size: 7rem;
     letter-spacing: 0;
-  }
-
-}
-
-@media (max-width: 560px) {
-
-  .main_txt h1 {
-    font-size: 5.5rem;
-    letter-spacing: 0;
-  }
-
-  .main_txt p {
-    font-size: 1.4rem;
-    text-align: center;
-    max-width: 27rem;
-
+    line-height: 6rem;
   }
 
   .main_btn {
@@ -166,10 +158,10 @@
 }
 
 
-@media (max-width : 390px) {
-  .main_txt {
-    font-size: 2.1rem;
-    text-align: center;
+@media (max-width : 550px) {
+  .main_txt h1 {
+    font-size: 5.5rem;
+    line-height: 3.6rem;
   }
 
   .main_txt h1 {
@@ -177,8 +169,7 @@
   }
 
   .main_txt p {
-    font-size: 1.2rem;
-    max-width: 22rem;
+    font-size: 1.7rem;
 
   }
 
@@ -192,11 +183,13 @@
 
 @media (max-width : 300px) {
   .main_txt h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    line-height: 2.5rem;
   }
 
   .main_txt p {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
+    max-width: 20rem;
 
   }
 
