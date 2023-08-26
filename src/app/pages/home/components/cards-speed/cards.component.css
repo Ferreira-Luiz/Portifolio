@@ -35,14 +35,12 @@
   font-weight: 700;
   opacity: 0.1;
   color: var(--p-txt);
-  font-family: 'nexa';
 
 }
 
 
 .titulo {
   font-size: 1.6rem;
-  font-family: 'nexa';
   font-weight: 700;
   letter-spacing: 3px;
 }
