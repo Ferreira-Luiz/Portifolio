@@ -31,11 +31,17 @@
   font-weight: 700;
   opacity: 0.2;
   letter-spacing: 3px;
+  font-family: 'nexa';
 
 }
 
 .title_conhecimentos p {
+  display: block;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: var(--p-txt);
+  width: 60rem;
 }
 
 .language_icons {
@@ -52,7 +58,8 @@
   align-items: center;
   gap: 2rem;
   background-color: #24292f;
-  padding: 2rem 4rem;
+  width: 15rem;
+  padding: 2rem;
   border-radius: 1rem;
   transition: transform .3s ease;
   transition: box-shadow 0.3s ease-in-out;
@@ -87,25 +94,45 @@
     font-size: 4rem;
   }
 
+  .icon_group {
+    width: 12rem;
+  }
+
+  .icon_group img {
+    width: 4rem;
+    height: 4rem;
+  }
+
   .title_conhecimentos p {
     font-size: 1.3rem;
-    max-width: 90%;
+    max-width: 40rem;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .title_conhecimentos h3 {
-    font-size: 2.2rem;
+    font-size: 3.1rem;
     letter-spacing: normal;
   }
 
   .title_conhecimentos p {
     font-size: 1.2rem;
-    max-width: 60%;
+    max-width: 20rem;
   }
+
 }
 
-@media (max-width: 200px) {
+@media (max-width: 280px) {
+  .title_conhecimentos h3 {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+  }
+
+  .title_conhecimentos p {
+    font-size: 1.2rem;
+    max-width: 15rem;
+  }
+
   .icon_group {
     gap: 1rem;
     padding: 2rem 3rem;

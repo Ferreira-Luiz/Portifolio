@@ -26,24 +26,23 @@
   box-shadow: var(--dark_shadow)
 }
 
+
 .site {
   position: absolute;
   top: 0;
   left: 0.5rem;
-  font-size: 4rem;
-  letter-spacing: 3px;
+  font-size: 3rem;
   font-weight: 700;
   opacity: 0.1;
   color: var(--p-txt);
+  font-family: 'nexa';
 
 }
 
-.card:hover {
-  box-shadow: var(--light_shadow)
-}
 
 .titulo {
   font-size: 1.6rem;
+  font-family: 'nexa';
   font-weight: 700;
   letter-spacing: 3px;
 }

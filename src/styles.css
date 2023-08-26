@@ -6,6 +6,14 @@
 
 }
 
+@font-face {
+  font-family: 'nexa';
+  src: url('./fonts/nexa-rust.sans-black.otf') format('woff2'),
+    url('./fonts/nexa-rust.sans-black.otf') format('woff');
+  font-display: swap;
+
+}
+
 
 
 /*

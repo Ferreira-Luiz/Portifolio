@@ -23,6 +23,8 @@
   text-transform: uppercase;
   font-size: 10rem;
   font-weight: 700;
+  font-family: 'nexa';
+
 }
 
 .duvidas_group {
@@ -41,6 +43,9 @@
 .duvidas_group h3 {
   font-size: 6rem;
   color: var(--orange);
+  font-family: 'nexa';
+
+
 }
 
 

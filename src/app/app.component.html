@@ -1,11 +1,15 @@
 <header class="header">
   <app-header />
 </header>
-
-
-
-
+<div class="bg">
+  <img src="../assets/images/bg.png" alt="">
+</div>
+<div class="bg2">
+  <img src="../assets/images/bg.png" alt="">
+</div>
 <div class="container">
+
+
 
   <main id="home">
     <app-main />
@@ -26,17 +30,22 @@
     <article>
       <app-resultados />
       <app-cards class="scroll" [@slideIn]="showIcons" />
+
     </article>
   </section>
 
+
+  <div class="bg_bottom">
+    <img src="../assets/images/bg.png" alt="">
+  </div>
   <app-duvidas />
 
 
 
-</div>
 
+
+</div>
 <footer>
   <app-footer />
 </footer>
-
 <app-mobile-menu class="mobile_header" />
