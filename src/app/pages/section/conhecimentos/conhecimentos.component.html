@@ -5,8 +5,8 @@
       <p>Capaz de desenvolver aplicações completas utilizando o melhor que cada uma tem a oferecer</p>
     </div>
 
-    <div class="language_icons scroll" [@slideIn]="showIcons">
-      <div class="icon_group" *ngFor="let exp of experiencias">
+    <div class="language_icons " [@slideIn]="showIcons">
+      <div class="icon_group scroll" *ngFor="let exp of experiencias">
         <img [src]="exp.imagem" alt="{{exp.alt}}">
         <span>{{exp.title}}</span>
       </div>
@@ -21,8 +21,8 @@
       <p>Para facilitar o trabalho em grupo e o controle de versão dos projetos</p>
     </div>
 
-    <div class="language_icons scroll" [@slideIn]="showIcons">
-      <div *ngFor="let Ferramentas of ferramentas" class="icon_group">
+    <div class="language_icons" [@slideIn]="showIcons">
+      <div *ngFor="let Ferramentas of ferramentas" class="icon_group scroll">
         <img [src]="Ferramentas.imagem" alt="{{Ferramentas.alt}}">
         <span>{{Ferramentas.title}}</span>
       </div>

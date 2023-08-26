@@ -7,13 +7,12 @@
 
 
 
-  <div class="bg">
+  <div class="bg"></div>
 
-    <main id="home">
-      <app-main />
-      <app-code-editor />
-    </main>
-  </div>
+  <main id="home">
+    <app-main />
+    <app-code-editor />
+  </main>
 
 
   <section>
@@ -38,10 +37,13 @@
 </div>
 
 
-<app-duvidas />
 
+<div class="container_bottom">
+  <app-duvidas />
+  <div class="bg2"></div>
 
-<footer>
-  <app-footer />
-</footer>
-<app-mobile-menu class="mobile_header" />
+  <footer>
+    <app-footer />
+  </footer>
+  <app-mobile-menu class="mobile_header" />
+</div>

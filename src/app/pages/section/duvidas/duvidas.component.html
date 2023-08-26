@@ -1,7 +1,7 @@
 <div class="container">
 
-  <span class="title_group">Perguntas</span>
-  <div class="container_duvidas">
+  <span class="title_group scroll">Perguntas</span>
+  <div class="container_duvidas scroll">
 
     <div [@slideIn] (click)="toggleResposta(pergunta)" [ngClass]="{'isActive': pergunta.expandida}"
       class="duvidas_group scroll" *ngFor="let pergunta of perguntas">
