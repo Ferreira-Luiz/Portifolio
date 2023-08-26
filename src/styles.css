@@ -87,7 +87,7 @@ body {
   font-size: 1.6rem;
   background: linear-gradient(to bottom, #2a2342, #1d1f29);
   color: #ffff;
-  overflow: hidden;
+  overflow-x: hidden;
 
 
 }
