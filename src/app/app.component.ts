@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { slideInAnimation } from './shared/animations/modules/angularAnimations.module';
+import { slideInAnimation } from './shared/services/modules/angularAnimations.module';
 
-import { ScrollReavealService } from './shared/animations/services/scroll-reaveal.service';
-import { ScrollSectionService } from './shared/animations/services/scroll-section.service';
+import { ScrollReavealService } from './shared/services/animations/scroll-reaveal.service';
+import { ScrollSectionService } from './shared/services/animations/scroll-section.service';
 
 @Component({
   selector: 'app-root',

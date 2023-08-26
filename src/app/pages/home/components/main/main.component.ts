@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { slideInAnimation } from 'src/app/shared/animations/modules/angularAnimations.module';
+import { ScrollReavealService } from 'src/app/shared/services/animations/scroll-reaveal.service';
+import { slideInAnimation } from 'src/app/shared/services/modules/angularAnimations.module';
 
-import { ScrollReavealService } from 'src/app/shared/animations/services/scroll-reaveal.service';
 
 
 @Component({

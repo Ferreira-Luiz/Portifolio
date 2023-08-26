@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollReavealService } from '../../animations/services/scroll-reaveal.service';
+import { ScrollReavealService } from 'src/app/shared/services/animations/scroll-reaveal.service';
 
 @Component({
   selector: 'app-cards',

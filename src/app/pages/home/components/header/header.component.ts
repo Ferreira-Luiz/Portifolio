@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollReavealService } from 'src/app/shared/services/animations/scroll-reaveal.service';
+import { ScrollSectionService } from 'src/app/shared/services/animations/scroll-section.service';
 
-import { ScrollReavealService } from 'src/app/shared/animations/services/scroll-reaveal.service';
-import { ScrollSectionService } from './../../../shared/animations/services/scroll-section.service';
 
 
 @Component({

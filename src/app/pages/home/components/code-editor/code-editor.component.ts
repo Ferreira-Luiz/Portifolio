@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as ace from 'ace-builds';
 
-import { slideInAnimation } from '../../../shared/animations/modules/angularAnimations.module';
-import { ScrollReavealService } from '../../../shared/animations/services/scroll-reaveal.service';
+import { slideInAnimation } from 'src/app/shared/services/modules/angularAnimations.module';
+import { ScrollReavealService } from 'src/app/shared/services/animations/scroll-reaveal.service';
 import { EditorService } from './editor.service';
 
 

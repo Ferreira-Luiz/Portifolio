@@ -1,8 +1,8 @@
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
-import { slideInAnimation } from 'src/app/shared/animations/modules/angularAnimations.module';
+import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
+import { CountService } from 'src/app/shared/services/animations/count.service';
+import { ScrollReavealService } from 'src/app/shared/services/animations/scroll-reaveal.service';
+import { slideInAnimation } from 'src/app/shared/services/modules/angularAnimations.module';
 
-import { ScrollReavealService } from 'src/app/shared/animations/services/scroll-reaveal.service';
-import { CountService } from 'src/app/shared/animations/services/count.service';
 
 
 @Component({

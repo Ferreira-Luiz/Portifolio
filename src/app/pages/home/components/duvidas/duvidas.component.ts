@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { slideFromTop, slideInAnimation } from 'src/app/shared/animations/modules/angularAnimations.module';
-import { ScrollReavealService } from 'src/app/shared/animations/services/scroll-reaveal.service';
+import { ScrollReavealService } from 'src/app/shared/services/animations/scroll-reaveal.service';
+import { slideFromTop, slideInAnimation } from 'src/app/shared/services/modules/angularAnimations.module';
 
 import { FaqModel } from './model/faq-model';
 

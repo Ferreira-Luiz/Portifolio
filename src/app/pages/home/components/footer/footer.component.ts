@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { ScrollSectionService } from 'src/app/shared/services/animations/scroll-section.service';
 
-import { ScrollSectionService } from '../../shared/animations/services/scroll-section.service';
 
 
 @Component({
