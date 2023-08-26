@@ -9,7 +9,7 @@
 
 }
 
-.bg {
+/* .bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,19 +19,9 @@
   opacity: 0.05;
   top: 0;
   left: 0;
+  right: 0;
 }
 
-.bg2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  max-width: 100%;
-  z-index: -2;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-}
 
 .bg_bottom {
   position: absolute;
@@ -39,7 +29,7 @@
   right: 0;
   max-width: 100%;
   opacity: 0.05;
-}
+} */
 
 
 .mobile_header {
