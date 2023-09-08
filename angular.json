@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies":[
-              "loadash",
+              "lodash",
               "ace-builds"
             ],
             "outputPath": "dist/port",
