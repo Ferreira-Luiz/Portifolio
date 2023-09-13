@@ -13,10 +13,9 @@
 
 .about_image img {
   width: 50rem;
-  height: 100%;
   max-width: 100%;
   border-radius: 1rem;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--orange);
 }
 
 .about_content {
@@ -51,18 +50,6 @@
   color: var(--p-txt);
 }
 
-
-.about_icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.about_icons img {
-  width: 4rem;
-}
-
 @media (max-width: 1012px) {
   .container {
     flex-wrap: wrap;
@@ -79,10 +66,6 @@
     text-align: start;
     order: -1;
     max-width: 100%;
-  }
-
-  .about_icons {
-    margin: 2rem 0;
   }
 
   .about_image img {
@@ -122,10 +105,5 @@
 
   .about_txt span {
     font-size: 1.3rem;
-  }
-
-  .about_icons img {
-    width: 2.2rem;
-    height: 2.2rem;
   }
 }
